@@ -20,21 +20,25 @@ public class Relativ_player : MonoBehaviour {
 
 	wrmhl Relativ_headset = new wrmhl(); // wrmhl is the bridge beetwen your computer and hardware.
 
-	[Tooltip("SerialPort of Relativ.")]
-	public string portName = "COM8";
+	Relativ_setup Relativ_setup = new Relativ_setup(); // This class allow auto config
 
-	[Tooltip("Baudrate")]
-	public int baudRate = 250000;
+	public string portName;
 
+	public int baudRate;
 
-	[Tooltip("Timeout")]
-	public int ReadTimeout = 20;
+	public int ReadTimeout;
 
 	string[] sep = new string[] {","};
 
 	string data;
 
 	void Start () {
+		portName = Relativ_setup.getPort();
+
+		baudRate = Relativ_setup.getBaudRate();
+
+		ReadTimeout = Relativ_setup.getTimeout();
+
 		Relativ_headset.set (portName, baudRate, ReadTimeout, 1); // This method set the communication with the following vars;
 		//                              Serial Port, Baud Rates and Read Timeout.
 		Relativ_headset.connect (); // This method open the Serial communication with the vars previously given.
