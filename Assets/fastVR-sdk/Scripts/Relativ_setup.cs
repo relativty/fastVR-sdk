@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO.Ports;
 
 public class Relativ_setup {
 
@@ -11,7 +12,31 @@ public class Relativ_setup {
 	public int ReadTimeout;
 
 	public string getPort() {
-		return "COM3";
+		SerialPort tmp_serialPort;
+		foreach (string port in SerialPort.GetPortNames()) {
+			tmp_serialPort = new SerialPort (port);
+			tmp_serialPort.BaudRate = 250000;
+			tmp_serialPort.ReadTimeout = 50;
+
+			if (tmp_serialPort.IsOpen == false) {
+				try {
+					//open serial port
+					tmp_serialPort.Open ();
+					string dataComingFromRelativ = tmp_serialPort.ReadLine();
+					if (dataComingFromRelativ != "") {
+						//if (dataComingFromRelativ == "13092001MCPC") {
+							this.portName = port;
+							tmp_serialPort.Close();
+						//}
+					} else {
+						tmp_serialPort.Close ();
+					}
+				} catch {
+
+				}
+			}
+		}
+		return this.portName;
 	}
 
 	public int getBaudRate() {
@@ -21,9 +46,4 @@ public class Relativ_setup {
 	public int getTimeout() {
 		return 20;
 	}
-
-	void Start () {
-
-	}
-
 }
