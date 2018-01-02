@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/github/issues/relativty/fastVR-sdk.svg">
 </p>
 
-<img src="/img/fastVR_demo.gif" width="1000">
+<img src="/img/fastVR_demo.gif" width="100%" height="500">
 
 ## Speed-up VR development time 🚀
 
