@@ -24,10 +24,8 @@ public class Relativ_setup {
 					tmp_serialPort.Open ();
 					string dataComingFromRelativ = tmp_serialPort.ReadLine();
 					if (dataComingFromRelativ != "") {
-						//if (dataComingFromRelativ == "13092001MCPC") {
 							this.portName = port;
 							tmp_serialPort.Close();
-						//}
 					} else {
 						tmp_serialPort.Close ();
 					}
@@ -40,7 +38,7 @@ public class Relativ_setup {
 	}
 
 	public int getBaudRate() {
-		return 1;
+		return 250000;
 	}
 
 	public int getTimeout() {
