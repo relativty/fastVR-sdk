@@ -1,7 +1,9 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/relativty/fastVR-sdk"><img src="/img/FastVR.png" width="100%"></a>
+  <a href="https://github.com/relativty/fastVR-sdk"><img src="/img/FastVR.png" width="90%"></a>
 </h1>
+<h4 align="center"> Create VR games in Unity in a minute 🔥
+</h4>
 <p align="center">
   <img src="https://img.shields.io/github/license/relativty/fastVR-sdk.svg">
   <img src="https://img.shields.io/github/stars/relativty/fastVR-sdk.svg">
