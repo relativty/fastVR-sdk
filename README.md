@@ -12,6 +12,8 @@
 
 <img src="/img/fastVR_demo.gif" width="100%" height="500">
 
+### Important ! ⚠ Before having a look at the repo you should check <a href="https://github.com/relativty/Relativ">Relativ</a>, the VR headset FastVR is made for ⚠
+
 ## Speed-up VR development time 🚀
 
 FastVR is based on [WRMHL](https://github.com/relativty/wrmhl) and built for [Relativ](https://github.com/relativty/Relativ). Using this package you can easily create VR games compatible with [Relativ Headset](https://github.com/relativty/Relativ), an Oculus-like VR headset that cost 100$.
