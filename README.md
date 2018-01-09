@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/github/issues/relativty/fastVR-sdk.svg">
 </p>
 
-<img src="/img/fastVR_demo.gif" width="100%" height="500">
+<img src="/img/fastVR_demo.gif" width="100%">
 
 ### Important ! ⚠ Before having a look at the repo you should check <a href="https://github.com/relativty/Relativ">Relativ</a>, the VR headset FastVR is designed for ⚠
 
