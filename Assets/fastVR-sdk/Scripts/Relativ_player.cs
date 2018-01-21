@@ -55,7 +55,7 @@ public class Relativ_player : MonoBehaviour {
 		float y = float.Parse (values[1]);
 		float z = float.Parse (values[2]);
 
-		transform.rotation = new Quaternion(x, y, z, w);
+		transform.localRotation = new Quaternion(x, y, z, w);
 
 	}
 
