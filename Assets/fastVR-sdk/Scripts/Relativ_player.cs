@@ -54,8 +54,9 @@ public class Relativ_player : MonoBehaviour {
 		float x = float.Parse (values[0]);
 		float y = float.Parse (values[1]);
 		float z = float.Parse (values[2]);
+		float[] EulerAngles = Relativ_math_transform.getEuler(w, x, y, z);
 
-		transform.localRotation = new Quaternion(x, y, z, w);
+		transform.localEulerAngles = new Vector3 (EulerAngles[0],EulerAngles[1],EulerAngles[2]);
 
 	}
 
