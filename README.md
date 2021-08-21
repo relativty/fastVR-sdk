@@ -16,7 +16,7 @@
 
 ## Speed up VR development time 🚀
 
-FastVR is based on [WRMHL](https://github.com/relativty/wrmhl) and built for [Relativ](https://github.com/relativty/Relativ). Using this package you can easily create VR games compatible with the [Relativ Headset](https://github.com/relativty/Relativ), an Oculus-like VR headset that cost $100.
+FastVR is based on [WRMHL](https://github.com/relativty/wrmhl) and built for [Relativ](https://github.com/relativty/Relativ). Using this package you can easily create VR games compatible with the [Relativ Headset](https://github.com/relativty/Relativty), an Oculus-like VR headset that cost $200.
 
 FastVR can be deeply customized without breaking Relativ compatibility. You can use the default distortion shader or implement your own. We recommend both the default shader and [GVR](https://github.com/googlevr/gvr-unity-sdk). You can also change the WRMHL protocol.
 
